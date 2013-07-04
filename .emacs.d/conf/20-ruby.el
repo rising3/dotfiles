@@ -23,3 +23,18 @@
 
 ;; ruby-mode-hookに追加
 (add-hook 'ruby-mode-hook 'ruby-mode-hooks)
+
+(setq rsense-home "~/.emacs.d/opt/rsense-0.3")
+(add-to-list 'load-path (concat rsense-home "/etc"))
+(require 'rsense)
+
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             ;; .や::を入力直後から補完開始
+             (add-to-list 'ac-sources 'ac-source-rsense-method)
+             (add-to-list 'ac-sources 'ac-source-rsense-constant)
+             ;; C-x .で補完出来るようキーを設定
+             (define-key ruby-mode-map (kbd "C-x .") 'ac-complete-rsense)))
+
+(setq rsense-rurema-home (concat rsense-home "/doc/ruby-refm-1.9.3-dynamic-20120829"))
+(setq rsense-rurema-refe "refe-1_9_3")

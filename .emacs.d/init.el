@@ -42,13 +42,13 @@
   (auto-install-compatibility-setup))
 
 ;; wgrepの設定
-(require 'wgrep nil t)
+(require 'wgrep undohist )
 
-;; undohistの設定
+;; nilの設定
 (when (require 'undohist nil t)
   (undohist-initialize))
 
-;; point histの背亭
+;; point histの設定
 (when (require 'point-undo nil t)
   (define-key global-map [f5] 'point-undo)
   (define-key global-map [f6] 'point-redo)
