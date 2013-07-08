@@ -14,24 +14,22 @@
                    '(height . 40) ; ウィンドウの高さ（文字数）
                    )
                   default-frame-alist)))
-
-
 ;; フレーム透過設定
 (add-to-list 'default-frame-alist '(alpha . (0.90 0.10)))
 
 ;; ツールバーとスクロールバーを非表示
 (when window-system
   (tool-bar-mode 0)
-  (scroll-bar-mode 0))
+  (scroll-bar-mode 0)
 
-;; カラーテーマ設定
-(require 'color-theme)
-(color-theme-initialize)
-;;(color-theme-oswald)
-;;(color-theme-renegade)
-;;(color-theme-arjen)
-;;(color-theme-calm-forest)
-;;(color-theme-deep-blue)
-(color-theme-raspopovic)
-
-(setq initial-frame-alist default-frame-alist)
+  ;; カラーテーマ設定
+  (require 'color-theme)
+  (color-theme-initialize)
+  ;;(color-theme-oswald)
+  ;;(color-theme-renegade)
+  ;;(color-theme-arjen)
+  ;;(color-theme-calm-forest)
+  ;;(color-theme-deep-blue)
+  (color-theme-raspopovic)
+  
+  (setq initial-frame-alist default-frame-alist))

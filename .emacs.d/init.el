@@ -42,9 +42,9 @@
   (auto-install-compatibility-setup))
 
 ;; wgrepの設定
-(require 'wgrep undohist )
+(require 'wgrep nil t)
 
-;; nilの設定
+;; undohistの設定
 (when (require 'undohist nil t)
   (undohist-initialize))
 
