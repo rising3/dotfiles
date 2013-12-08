@@ -6,7 +6,7 @@
   ;; フォント設定
   (set-face-attribute 'default nil
 		      :family "monaco"
-		      :height 100)
+		      :height 120)
 
   (when (>= emacs-major-version 23)
     (set-fontset-font
