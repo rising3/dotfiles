@@ -15,3 +15,8 @@ rm ~/.tmux.conf
 rm -rf ~/.tmux.d
 ln -s $DIR/tmux.conf ~/.tmux.conf
 ln -s $DIR/tmux.d ~/.tmux.d
+
+# git
+git config --global core.editor 'emacs'
+git config --global color.ui 'auto'
+git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
