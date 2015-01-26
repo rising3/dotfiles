@@ -20,3 +20,4 @@ ln -s $DIR/tmux.d ~/.tmux.d
 git config --global core.editor 'emacs'
 git config --global color.ui 'auto'
 git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+git config --global credential.helper cache --timeout=3600
