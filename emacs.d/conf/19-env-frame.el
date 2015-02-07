@@ -1,3 +1,21 @@
+;; カラーテーマ設定
+(when (require 'color-theme nil t)
+  (color-theme-initialize)
+  ;;(color-theme-oswald)
+  ;;(color-theme-renegade)
+  ;;(color-theme-arjen)
+  ;;(color-theme-calm-forest)
+  (color-theme-deep-blue)
+  ;;(color-theme-raspopovic)
+
+  ;; ミニバッファの色変更
+  (face-spec-set 'minibuffer-prompt
+		 '((((class color) (background light))
+		    (:foreground "cyan"))
+		   (t (:foreground "white"
+		       :background "brown"))))
+)
+
 ;; 起動時のウィンドウサイズ、色などを設定
 (if (boundp 'window-system)
     (setq default-frame-alist
@@ -22,14 +40,3 @@
   ;; フレーム透過設定
   (add-to-list 'default-frame-alist '(alpha . (0.90 0.70)))  
   (setq initial-frame-alist default-frame-alist))
-
-;; カラーテーマ設定
-(when (require 'color-theme nil t)
-  (color-theme-initialize)
-  ;;(color-theme-oswald)
-  ;;(color-theme-renegade)
-  ;;(color-theme-arjen)
-  ;;(color-theme-calm-forest)
-  (color-theme-deep-blue)
-  ;;(color-theme-raspopovic)
-)
