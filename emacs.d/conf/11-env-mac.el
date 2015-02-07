@@ -3,6 +3,7 @@
   (require 'ucs-normalize)
   (setq file-name-coding-system 'utf-8-hfs)
   (setq locale-coding-system 'utf-8-hfs)
+
   ;; フォント設定
   (set-face-attribute 'default nil
 		      :family "monaco"
@@ -32,4 +33,3 @@
 	    (".*monaco cy-bold-.*-mac-cyrillic" . 0.9)
 	    (".*monaco-bold-.*-mac-roman" . 0.9)
 	    ("-cdac$" . 1.3)))))
-
