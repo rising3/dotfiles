@@ -26,9 +26,9 @@
                    '(mouse-color      . "black")  ; マウスカーソルの色
                    '(cursor-color     . "black")  ; カーソルの色
                    '(cursor-type      . box)      ; カーソルの形状
-                   '(top . 60) ; ウィンドウの表示位置（Y座標）
-                   '(left . 100) ; ウィンドウの表示位置（X座標）
-                   '(width . 80) ; ウィンドウの幅（文字数）
+                   ;;'(top . 60) ; ウィンドウの表示位置（Y座標）
+                   ;;'(left . 100) ; ウィンドウの表示位置（X座標）
+                   '(width . 96) ; ウィンドウの幅（文字数）
                    '(height . 40) ; ウィンドウの高さ（文字数）
                    )
                   default-frame-alist)))
