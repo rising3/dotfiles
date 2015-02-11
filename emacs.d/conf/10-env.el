@@ -28,3 +28,9 @@
 (size-indication-mode t)
 (display-time-mode t)
 (display-battery-mode t)
+
+;; undo-treeの設定
+(when (require 'undo-tree nil t)
+  (global-undo-tree-mode t)
+  ;; C-' にリドゥを割り当てる  
+  (global-set-key (kbd "C-'") 'undo-tree-redo))
