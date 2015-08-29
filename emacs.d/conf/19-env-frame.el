@@ -20,10 +20,10 @@
 (if (boundp 'window-system)
     (setq default-frame-alist
           (append (list
-                   '(foreground-color . "black")  ; 文字色
-                   '(background-color . "white")  ; 背景色
-                   '(border-color     . "white")  ; ボーダー色
-                   '(mouse-color      . "black")  ; マウスカーソルの色
+;;                   '(foreground-color . "black")  ; 文字色
+;;                   '(background-color . "white")  ; 背景色
+;;                   '(border-color     . "white")  ; ボーダー色
+;;                   '(mouse-color      . "black")  ; マウスカーソルの色
                    '(cursor-color     . "black")  ; カーソルの色
                    '(cursor-type      . box)      ; カーソルの形状
                    ;;'(top . 60) ; ウィンドウの表示位置（Y座標）
