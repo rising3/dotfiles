@@ -1,6 +1,7 @@
 # .emacs.d
 
-/emacs.d/ac-comphist.dat
-/emacs.d/auto-save-list
-/emacs.d/backups
-/emacs.d/undohist
+auto-save-list/
+backups/
+undohist/
+ac-comphist.dat
+session.*
