@@ -8,9 +8,13 @@ ln -s $DIR/oh-my-zsh/custom/local-settings.zsh ~/.oh-my-zsh/custom/local-setting
 
 # emacs
 rm -rf ~/.emacs.d
-ln -s $DIR/emacs.d ~/.emacs.d
+if [ ${OS} != "Windows_NT" ]; then
+  ln -s $DIR/emacs.d ~/.emacs.d
+else
+  cp -ri $DIR/emacs.d ~/.emacs.d
+fi
 
-# tmux
+#etmux
 rm ~/.tmux.conf
 rm -rf ~/.tmux.d
 ln -s $DIR/tmux.conf ~/.tmux.conf
