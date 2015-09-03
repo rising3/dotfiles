@@ -47,8 +47,8 @@
   
   ;; フォント設定
   (set-face-attribute 'default nil
-		      :family "Consolas"
-		      :height 130)
+		      :family "Migu 1M"
+		      :height 120)
 
   (when (>= emacs-major-version 23)
     (set-fontset-font
