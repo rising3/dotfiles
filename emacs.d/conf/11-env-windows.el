@@ -50,16 +50,16 @@
 		      :family "Migu 1M"
 		      :height 100)
 
-;  (when (>= emacs-major-version 23)
-;    (set-fontset-font
-;     (frame-parameter nil 'font)
-;     'japanese-jisx0208
-;     (font-spec :family "MeiryoKe_Console"))
+  (when (>= emacs-major-version 23)
+    (set-fontset-font
+     (frame-parameter nil 'font)
+     'japanese-jisx0208
+     (font-spec :family "MeiryoKe_Console"))
 
-;    (set-fontset-font
-;     (frame-parameter nil 'font)
-;     'japanese-jisx0212
-;     (font-spec :family "MeiryoKe_Console"))
+    (set-fontset-font
+     (frame-parameter nil 'font)
+     'japanese-jisx0212
+     (font-spec :family "MeiryoKe_Console"))
 
-;    (setq face-font-rescale-alist
-;	  '(("MeiryoKe_Console" . 1.08)))))
+    (setq face-font-rescale-alist
+	  '(("MeiryoKe_Console" . 1.08)))))
