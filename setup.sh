@@ -8,7 +8,7 @@ ln -s $DIR/oh-my-zsh/custom/local-settings.zsh ~/.oh-my-zsh/custom/local-setting
 
 # emacs
 rm -rf ~/.emacs.d
-if [ ${OS} != "Windows_NT" ]; then
+if [ "${OS}" != "Windows_NT" ]; then
   ln -s $DIR/emacs.d ~/.emacs.d
 else
   cp -ri $DIR/emacs.d ~/.emacs.d
