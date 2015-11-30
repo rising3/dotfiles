@@ -34,3 +34,6 @@
   (global-undo-tree-mode t)
   ;; C-' にリドゥを割り当てる  
   (global-set-key (kbd "C-'") 'undo-tree-redo))
+
+;; シェルのパスを追加する
+(exec-path-from-shell-initialize)
