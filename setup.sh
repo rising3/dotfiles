@@ -29,7 +29,7 @@ else
 #  cp -ri $DIR/tmux.d ~/.tmux.d
 fi
 
-# tmux
+# leiningen
 rm ~/.lein/profiles.clj
 mkdir -p ~/.lein
 if [ "${OS}" != "Windows_NT" ]; then
