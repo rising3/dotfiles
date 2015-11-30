@@ -2,7 +2,7 @@
 ZSH_THEME="terminalparty"
 
 # plugins
-iplugins=(git ruby gem bundler rails emoji-clock brew osx)
+iplugins=(gitfast ruby gem bundler rails emoji-clock brew osx)
 
 # aliases
 alias emacs='emacs -nw'

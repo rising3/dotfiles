@@ -35,5 +35,11 @@
   ;; C-' にリドゥを割り当てる  
   (global-set-key (kbd "C-'") 'undo-tree-redo))
 
+;; 応急措置的なcygwin shellの設定
+(when (eq system-type 'windows-nt)
+  (setq shell-file-name "c:/cygwin64/bin/zsh")
+  (setenv "SHELL" shell-file-name)
+  (setq explicit-shell-file-name shell-file-name))
+
 ;; シェルのパスを追加する
 (exec-path-from-shell-initialize)
