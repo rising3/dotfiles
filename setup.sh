@@ -4,7 +4,11 @@ DIR=$(cd $(dirname $0) && pwd)
 
 # oh-my-zsh
 rm ~/.oh-my-zsh/custom/local-settings.zsh
-ln -s $DIR/oh-my-zsh/custom/local-settings.zsh ~/.oh-my-zsh/custom/local-settings.zsh
+if [ "${OS}" != "Windows_NT" ]; then
+  ln -s $DIR/oh-my-zsh/custom/local-settings.zsh ~/.oh-my-zsh/custom/local-settings.zsh
+else
+  cp -ri $DIR/oh-my-zsh/custom/local-settings.zsh ~/.oh-my-zsh/custom/local-settings.zsh
+fi
 
 # emacs
 rm -rf ~/.emacs.d
@@ -14,11 +18,25 @@ else
   cp -ri $DIR/emacs.d ~/.emacs.d
 fi
 
-#etmux
+# tmux
 rm ~/.tmux.conf
-rm -rf ~/.tmux.d
-ln -s $DIR/tmux.conf ~/.tmux.conf
-ln -s $DIR/tmux.d ~/.tmux.d
+# rm -rf ~/.tmux.d
+if [ "${OS}" != "Windows_NT" ]; then
+  ln -s $DIR/tmux.conf ~/.tmux.conf
+#  ln -s $DIR/tmux.d ~/.tmux.d
+else
+  cp -ri $DIR/tmux.conf ~/.tmux.conf
+#  cp -ri $DIR/tmux.d ~/.tmux.d
+fi
+
+# tmux
+rm ~/.lein/profiles.clj
+mkdir -p ~/.lein
+if [ "${OS}" != "Windows_NT" ]; then
+  ln -s $DIR/lein/profiles.clj ~/.lein/profiles.clj
+else
+  cp -ri $DIR/lein/profiles.clj ~/.lein/profiles.clj
+fi
 
 # git
 git config --global core.editor 'emacs'
