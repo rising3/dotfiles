@@ -22,7 +22,7 @@
   (progn
     (set-face-attribute 'default nil
 			:family "Ricty"
-			:height 100)
+			:height 120)
     
     (set-fontset-font
      nil 'japanese-jisx0208

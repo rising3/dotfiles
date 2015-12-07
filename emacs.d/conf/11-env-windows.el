@@ -48,8 +48,11 @@
   ;; フォント設定
   (set-face-attribute 'default nil
 		      :family "Migu 1M"
-		      :height 100)
+		      :height 110)
 
+
+
+ 
   (when (>= emacs-major-version 23)
     (set-fontset-font
      (frame-parameter nil 'font)

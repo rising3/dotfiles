@@ -22,7 +22,7 @@
 ;; 行番号設定
 (require 'linum)
 (global-linum-mode t)
-(setq linum-format "%5d")
+(setq linum-format "%5d| ")
 
 ;; モードラインにファイルサイズ、現在時刻、バッテリーを表示する
 (size-indication-mode t)
