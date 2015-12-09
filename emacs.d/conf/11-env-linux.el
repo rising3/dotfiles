@@ -19,18 +19,14 @@
   (setq locale-coding-system 'utf-8)
 
   ;; フォント設定
+  (set-default-font "-PfEd-Ricty-bold-normal-normal-*-15-*-*-*-*-0-iso10646-1")
   (progn
-    (set-face-attribute 'default nil
-			:family "Ricty"
-			:height 120)
-    
-    (set-fontset-font
-     nil 'japanese-jisx0208
-     (font-spec :family "Ricty"))
-
-    (set-fontset-font
-     nil 'japanese-jisx0212
-     (font-spec :family "Ricty"))
-    
-    (setq face-font-rescale-alist
-	  '((".*Ricty.*" . 1.0)))))
+    (set-face-font 'default
+		   "-PfEd-Ricty-bold-normal-normal-*-15-*-*-*-*-0-iso10646-1")
+    (set-face-font 'bold
+		   "-PfEd-Ricty-bold-normal-normal-*-15-*-*-*-*-0-iso10646-1")
+    (set-face-font 'italic
+		   "-PfEd-Ricty-bold-normal-normal-*-15-*-*-*-*-0-iso10646-1")
+    (set-face-font 'bold-italic
+		   "-PfEd-Ricty-bold-normal-normal-*-15-*-*-*-*-0-iso10646-1")
+    ))
