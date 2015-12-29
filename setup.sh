@@ -20,13 +20,13 @@ fi
 
 # tmux
 rm ~/.tmux.conf
-# rm -rf ~/.tmux.d
+rm -rf ~/.tmux.d
 if [ "${OS}" != "Windows_NT" ]; then
   ln -s $DIR/tmux.conf ~/.tmux.conf
-#  ln -s $DIR/tmux.d ~/.tmux.d
+  ln -s $DIR/tmux.d ~/.tmux.d
 else
   cp -ri $DIR/tmux.conf ~/.tmux.conf
-#  cp -ri $DIR/tmux.d ~/.tmux.d
+  cp -ri $DIR/tmux.d ~/.tmux.d
 fi
 
 # leiningen
