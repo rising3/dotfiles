@@ -49,9 +49,6 @@
   (set-face-attribute 'default nil
 		      :family "Migu 1M"
 		      :height 110)
-
-
-
  
   (when (>= emacs-major-version 23)
     (set-fontset-font

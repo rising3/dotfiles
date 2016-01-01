@@ -17,13 +17,13 @@
 (set-face-underline-p 'show-paren-match-face "yellow")
 
 ;; 現在行のハイライト
-(defface my-hi-line-face
+(defface my-hl-line-face
   ;; 背景がdarkならば背景色を紺に
   '((((class color) (background drak))
      (:background "NavyBlue" t))
     ;; 背景がlightならば背景色を緑に
     (((class color) (background light))
-     (:backgound "LightGoldenrodYellow" t))
+     (:background "LightGoldenrodYellow" t))
     (t (:lod t)))
   "hl-line's my face")
 (setq hl-line-face 'my-hl-line-face)

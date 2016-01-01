@@ -4,6 +4,8 @@
 ;; packge.elの設定
 (when (> emacs-major-version 23)
   (when (require 'package nil t)
+    (add-to-list 'package-archives
+		 '("melpa" . "http://melpa.milkbox.net/packages/"))
     ;; パッケージリポジトリにMarmaladeと開発者運営のELPAを追加
     (add-to-list 'package-archives
 		 '("marmalade" . "http://marmalade-repo.org/packages/"))

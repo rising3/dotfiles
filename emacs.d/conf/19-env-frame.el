@@ -5,8 +5,9 @@
   ;;(color-theme-renegade)
   ;;(color-theme-arjen)
   ;;(color-theme-calm-forest)
-  (color-theme-deep-blue)
   ;;(color-theme-raspopovic)
+  ;;(color-theme-deep-blue)
+  (color-theme-subtle-hacker)
 
   ;; ミニバッファの色変更
   (face-spec-set 'minibuffer-prompt
@@ -34,9 +35,9 @@
                   default-frame-alist)))
 
 ;; ツールバーとスクロールバーを非表示
-(when window-system
+(when `window-system
   (tool-bar-mode 0)
   (scroll-bar-mode 0)
   ;; フレーム透過設定
-  (add-to-list 'default-frame-alist '(alpha . (0.90 0.70)))  
+  (add-to-list 'default-frame-alist '(alpha . (1.00 0.70)))  
   (setq initial-frame-alist default-frame-alist))

@@ -13,8 +13,12 @@
 (setq nrepl-buffer-name-show-port t)
 
 (setq cider-auto-mode nil)
+(setq cider-show-error-buffer nil)
+(setq cider-auto-select-error-buffer nil)
+
 (setq nrepl-log-messages nil)
 (setq nrepl-hide-special-buffers t)
+
 
 (autoload 'ac-cider "ac-cider" nil t)
 (add-hook 'cider-mode-hook 'ac-flyspell-workaround)
