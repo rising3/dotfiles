@@ -48,18 +48,17 @@
   ;; フォント設定
   (set-face-attribute 'default nil
 		      :family "Migu 1M"
-		      :height 110)
+		      :height 120)
  
-  (when (>= emacs-major-version 23)
-    (set-fontset-font
-     (frame-parameter nil 'font)
-     'japanese-jisx0208
-     (font-spec :family "MeiryoKe_Console"))
+  (set-fontset-font
+   (frame-parameter nil 'font)
+   'japanese-jisx0208
+   (font-spec :family "MeiryoKe_Console"))
 
-    (set-fontset-font
-     (frame-parameter nil 'font)
-     'japanese-jisx0212
-     (font-spec :family "MeiryoKe_Console"))
+  (set-fontset-font
+   (frame-parameter nil 'font)
+   'japanese-jisx0212
+   (font-spec :family "MeiryoKe_Console"))
+  (setq face-font-rescale-alist
+	'(("MeiryoKe_Console" . 1.2))))
 
-    (setq face-font-rescale-alist
-	  '(("MeiryoKe_Console" . 1.08)))))
