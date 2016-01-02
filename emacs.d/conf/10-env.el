@@ -43,3 +43,8 @@
 
 ;; シェルのパスを追加する
 (exec-path-from-shell-initialize)
+
+; server start for emacs-client
+(require 'server)
+(unless (server-running-p)
+  (server-start))
