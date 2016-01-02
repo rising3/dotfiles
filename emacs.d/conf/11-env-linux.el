@@ -21,7 +21,7 @@
   ;; フォント設定
   (set-face-attribute 'default nil
                    :family "Ricty"
-                   :height 120)
+                   :height 140)
   (custom-set-faces
    '(variable-pitch ((t (:family "Ricty"))))
    '(fixed-pitch ((t (:family "Ricty")))))
