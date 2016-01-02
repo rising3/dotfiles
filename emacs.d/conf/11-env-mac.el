@@ -22,7 +22,7 @@
   ;; フォント設定
   (set-face-attribute 'default nil
 		      :family "Ricty"
-		      :height 140)
+		      :height 120)
 
   (set-fontset-font (frame-parameter nil 'font)
 		    'japanese-jisx0208
