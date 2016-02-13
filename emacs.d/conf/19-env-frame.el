@@ -1,21 +1,23 @@
 ;; カラーテーマ設定
-(when (require 'color-theme nil t)
-  (color-theme-initialize)
+(load-theme 'subdued t t)
+(enable-theme 'subdued)
+;; (when (require 'color-theme nil t)
+  ;;(color-theme-initialize)
   ;;(color-theme-oswald)
   ;;(color-theme-renegade)
   ;;(color-theme-arjen)
   ;;(color-theme-calm-forest)
   ;;(color-theme-raspopovic)
   ;;(color-theme-deep-blue)
-  (color-theme-subtle-hacker)
+  ;;(color-theme-subtle-hacker)
+;;   ;; ミニバッファの色変更
+;;   (face-spec-set 'minibuffer-prompt
+;; 		 '((((class color) (background light))
+;; 		    (:foreground "cyan"))
+;; 		   (t (:foreground "white"
+;; 		       :background "brown"))))
+;; )
 
-  ;; ミニバッファの色変更
-  (face-spec-set 'minibuffer-prompt
-		 '((((class color) (background light))
-		    (:foreground "cyan"))
-		   (t (:foreground "white"
-		       :background "brown"))))
-)
 
 ;; 起動時のウィンドウサイズ、色などを設定
 (if (boundp 'window-system)
@@ -29,7 +31,7 @@
                    '(cursor-type      . box)      ; カーソルの形状
                    ;;'(top . 60) ; ウィンドウの表示位置（Y座標）
                    ;;'(left . 100) ; ウィンドウの表示位置（X座標）
-                   '(width . 96) ; ウィンドウの幅（文字数）
+                   '(width . 128) ; ウィンドウの幅（文字数）
                    '(height . 40) ; ウィンドウの高さ（文字数）
                    )
                   default-frame-alist)))
