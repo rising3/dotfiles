@@ -19,7 +19,8 @@
   (setq locale-coding-system 'utf-8)
 
   ;; フォント設定
-  (set-face-attribute 'default nil
-                   :family "Ricty"
-                   :height 120))
+  (set-frame-font "ricty-13.5"))
+  ;; (set-face-attribute 'default nil
+  ;;                  :family "Ricty-Regular"
+  ;;                  :height 120))
 
