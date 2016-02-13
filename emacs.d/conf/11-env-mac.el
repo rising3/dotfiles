@@ -20,17 +20,19 @@
   (setq locale-coding-system 'utf-8-hfs)
 
   ;; フォント設定
-  (set-face-attribute 'default nil
-		      :family "Ricty"
-		      :height 140)
+  (set-frame-font "Ricty-14"))
 
-  (set-fontset-font (frame-parameter nil 'font)
-		    'japanese-jisx0208
-		    (font-spec :family "Hiragino Maru Gothic ProN"))
+  ;; (set-face-attribute 'default nil
+  ;; 		      :family "Ricty"
+  ;; 		      :height 120)
 
-  (set-fontset-font (frame-parameter nil 'font)
-		    'katakana-jisx0201
-		    (font-spec :family "Hiragino Maru Gothic ProN"))
+  ;; (set-fontset-font (frame-parameter nil 'font)
+  ;; 		    'japanese-jisx0208
+  ;; 		    (font-spec :family "Hiragino Maru Gothic ProN"))
 
-  (setq face-font-rescale-alist
-	       '((".*Hiragino_Maru_Gothic_ProN.*" . 1.2))))
+  ;; (set-fontset-font (frame-parameter nil 'font)
+  ;; 		    'katakana-jisx0201
+  ;; 		    (font-spec :family "Hiragino Maru Gothic ProN"))
+
+  ;; (setq face-font-rescale-alist
+  ;; 	       '((".*Hiragino_Maru_Gothic_ProN.*" . 1.2))))
