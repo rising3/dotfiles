@@ -21,5 +21,5 @@
   ;; フォント設定
   (set-face-attribute 'default nil
                    :family "Ricty"
-                   :height 135))
+                   :height 120))
 
