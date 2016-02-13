@@ -27,7 +27,7 @@
 ;;                   '(background-color . "white")  ; 背景色
 ;;                   '(border-color     . "white")  ; ボーダー色
 ;;                   '(mouse-color      . "black")  ; マウスカーソルの色
-                   '(cursor-color     . "black")  ; カーソルの色
+;;                   '(cursor-color     . "black")  ; カーソルの色
                    '(cursor-type      . box)      ; カーソルの形状
                    ;;'(top . 60) ; ウィンドウの表示位置（Y座標）
                    ;;'(left . 100) ; ウィンドウの表示位置（X座標）
