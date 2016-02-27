@@ -13,4 +13,11 @@ export EDITOR='emacs'
 export PATH=~/bin:$PATH
 
 # startup tmux
-[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux new-session \; source-file ~/.tmux.d/new-session
+case $TERM in
+     linux)
+	[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux new-session \; source-file ~/.tmux.d/new-session
+	;;
+     *)
+	[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux new-session
+	;;
+esac
