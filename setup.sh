@@ -38,6 +38,14 @@ else
   cp -ri $DIR/lein/profiles.clj ~/.lein/profiles.clj
 fi
 
+# conky
+rm ~/.conkyrc
+if [ "${OS}" != "Windows_NT" ]; then
+  ln -s $DIR/conkyrc ~/.conkyrc
+else
+  cp -ri $DIR/conkyrc ~/.conkyrc
+fi
+
 # git
 git config --global core.editor 'emacsclient -nw'
 git config --global color.ui 'auto'
