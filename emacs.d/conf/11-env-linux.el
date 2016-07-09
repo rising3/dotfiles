@@ -21,7 +21,7 @@
   ;; フォント設定
   (set-face-attribute 'default nil
 		      :family "Ricty Discord"
-		      :height 140)
+		      :height 120)
 
   (set-fontset-font (frame-parameter nil 'font)
 		    'japanese-jisx0208
@@ -33,9 +33,4 @@
 
   (set-fontset-font (frame-parameter nil 'font)
 		    'katakana-jisx0201
-		    (cons "Ricty Discord" "iso10646-1"))))
-  ;;(set-frame-font "ricty-13.5")
-  ;; (set-face-attribute 'default nil
-  ;;                  :family "Ricty-Regular"
-  ;;                  :height 120))
-
+		    (cons "Ricty Discord" "iso10646-1")))
