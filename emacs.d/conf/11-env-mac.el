@@ -20,19 +20,18 @@
   (setq locale-coding-system 'utf-8-hfs)
 
   ;; フォント設定
-  (set-frame-font "Ricty-14"))
+  (set-face-attribute 'default nil
+		      :family "Ricty Discord"
+		      :height 140)
 
-  ;; (set-face-attribute 'default nil
-  ;; 		      :family "Ricty"
-  ;; 		      :height 120)
+  (set-fontset-font (frame-parameter nil 'font)
+		    'japanese-jisx0208
+		    (cons "Ricty Discord" "iso10646-1"))
 
-  ;; (set-fontset-font (frame-parameter nil 'font)
-  ;; 		    'japanese-jisx0208
-  ;; 		    (font-spec :family "Hiragino Maru Gothic ProN"))
+  (set-fontset-font (frame-parameter nil 'font)
+		    'japanese-jisx0212
+		    (cons "Ricty Discord" "iso10646-1"))
 
-  ;; (set-fontset-font (frame-parameter nil 'font)
-  ;; 		    'katakana-jisx0201
-  ;; 		    (font-spec :family "Hiragino Maru Gothic ProN"))
-
-  ;; (setq face-font-rescale-alist
-  ;; 	       '((".*Hiragino_Maru_Gothic_ProN.*" . 1.2))))
+  (set-fontset-font (frame-parameter nil 'font)
+		    'katakana-jisx0201
+		    (cons "Ricty Discord" "iso10646-1")))

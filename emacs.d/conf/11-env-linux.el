@@ -19,7 +19,22 @@
   (setq locale-coding-system 'utf-8)
 
   ;; フォント設定
-  (set-frame-font "ricty-13.5"))
+  (set-face-attribute 'default nil
+		      :family "Ricty Discord"
+		      :height 140)
+
+  (set-fontset-font (frame-parameter nil 'font)
+		    'japanese-jisx0208
+		    (cons "Ricty Discord" "iso10646-1"))
+
+  (set-fontset-font (frame-parameter nil 'font)
+		    'japanese-jisx0212
+		    (cons "Ricty Discord" "iso10646-1"))
+
+  (set-fontset-font (frame-parameter nil 'font)
+		    'katakana-jisx0201
+		    (cons "Ricty Discord" "iso10646-1"))))
+  ;;(set-frame-font "ricty-13.5")
   ;; (set-face-attribute 'default nil
   ;;                  :family "Ricty-Regular"
   ;;                  :height 120))
