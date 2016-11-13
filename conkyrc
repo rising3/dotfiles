@@ -49,30 +49,33 @@ Processes: $processes Running: $running_processes
 CPU Frequency: ${freq_g}GHz
 CPU Usage: ${cpu cpu0}%
             ${cpugraph cpu0 -l}
-RAM Usage: $mem/$memmax
-    	   $membar
-Swap Usage: $swap/$swapmax
-     	    $swapbar
+RAM Usage: $mem/$memmax $membar
+Swap Usage: $swap/$swapmax $swapbar
 $hr
 File systems:
- / ${fs_used /}/${fs_size /}
-   	     ${fs_bar 6 /}
-	     ${diskiograph}
+ / ${fs_used /}/${fs_size /} ${fs_bar 6 /}
+ /home ${fs_used /home}/${fs_size /home} ${fs_bar 6 /home}
 $hr
 Networking:
- eth0\
+${if_existing /proc/net/route eth0}\
+ eth0
  Up: ${upspeed eth0} - Down: ${downspeed eth0}
  ${upspeedgraph eth0 32,140} ${downspeedgraph eth0 32,140}
-${if_existing /proc/net/route wlan0}$hr
-Wireless:
+ ${endif}\
+${if_existing /proc/net/route eno1}\
+ eno1: ${addr eno1}
+ Up: ${upspeed eno1} - Down: ${downspeed eno1}
+ ${upspeedgraph eno1 24,140} ${downspeedgraph eno1 24,140}
+ ${endif}\
+${if_existing /proc/net/route wlan0}\$hr
+Wireless:\
  ${wireless_essid wlan0} - ${wireless_bitrate wlan0}
  ${wireless_link_qual_perc wlan0}% ${wireless_link_bar wlan0}
- ${endif}
-${if_existing /sys/class/power_supply/BAT0/status}Battery:
+ ${endif}\
+${if_existing /sys/class/power_supply/BAT0/status}\Battery:
  ${battery}
  ${battery_time} ${battery_bar}
-$hr
-${endif}
+${endif}\
 $hr
 Top:
  Name               PID   CPU%   MEM%
