@@ -61,3 +61,17 @@
 
 ;; cua-modeの設定
 (cua-mode t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (yaml-mode wgrep undo-tree smartparens slamhound rainbow-delimiters python-mode package-store lua-mode js2-mode htmlize groovy-mode exec-path-from-shell erlang elixir-mode company color-theme-monokai color-theme-modern clojure-test-mode clojure-mode-extra-font-locking angular-snippets angular-mode ac-python ac-php ac-nrepl ac-inf-ruby ac-html-csswatcher ac-html-bootstrap ac-html-angular ac-html ac-haskell-process ac-etags ac-emoji ac-clang ac-cider ac-capf ac-c-headers 4clojure))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
