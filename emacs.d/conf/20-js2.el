@@ -1,7 +1,7 @@
 (defun js-indent-hook()
   ;; インデント幅を4にする
-  (setq js-indent-level 2
-	js-expr-indent-offset 2
+  (setq js-indent-level 4
+	js-expr-indent-offset 4
 	indent-tabs-mode nil)
   ;; whitch分のcaseラベルをインデントする関数を定義する
   (defun my-js-indent-line ()

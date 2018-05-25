@@ -1,5 +1,6 @@
 # theme
-ZSH_THEME="terminalparty"
+#ZSH_THEME="terminalparty"
+ZSH_THEME="minimal"
 
 # plugins
 plugins=(gitfast ruby gem bundler rails emoji-clock brew osx)
