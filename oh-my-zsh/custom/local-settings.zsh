@@ -9,6 +9,7 @@ plugins=(gitfast ruby gem bundler rails emoji-clock brew osx)
 alias emacs='emacsclient -nw'
 alias kill-emacs='emacsclient -e "(kill-emacs)"'
 export EDITOR='emacs'
+eval "$(hub alias -s)"
 
 # path
 export PATH=~/bin:$PATH
