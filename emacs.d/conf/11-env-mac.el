@@ -22,7 +22,7 @@
   ;; フォント設定
   (set-face-attribute 'default nil
 		      :family "Ricty Discord"
-		      :height 120)
+		      :height 160)
 
   (set-fontset-font (frame-parameter nil 'font)
 		    'japanese-jisx0208
