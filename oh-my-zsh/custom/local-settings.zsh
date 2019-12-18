@@ -11,6 +11,9 @@ alias kill-emacs='emacsclient -e "(kill-emacs)"'
 export EDITOR='emacs'
 eval "$(hub alias -s)"
 
+export LANG=ja_JP.UTF-8
+export LC_CTYPE=ja_JP.UTF-8
+
 # path
 export PATH=~/bin:$PATH
 

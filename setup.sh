@@ -53,3 +53,5 @@ git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --grap
 git config --global credential.helper cache --timeout=3600
 git config --global core.preloadindex true
 git config --global core.fscache true
+git config --global core.autocrlf input
+git config --global core.safecrlf true
