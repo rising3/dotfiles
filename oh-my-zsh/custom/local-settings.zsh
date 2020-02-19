@@ -14,8 +14,14 @@ eval "$(hub alias -s)"
 export LANG=ja_JP.UTF-8
 export LC_CTYPE=ja_JP.UTF-8
 
+# JVM
+export JVM_OPTS="--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --illegal-access=deny"
+
 # path
 export PATH=~/bin:$PATH
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # startup tmux
 case $TERM in
