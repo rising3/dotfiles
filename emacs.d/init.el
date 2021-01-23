@@ -5,12 +5,11 @@
 (when (> emacs-major-version 23)
   (when (require 'package nil t)
     (add-to-list 'package-archives
-		 '("melpa" . "http://melpa.milkbox.net/packages/"))
-    ;; パッケージリポジトリにMarmaladeと開発者運営のELPAを追加
+		 '("melpa" . "https://melpa.org/packages/"))
     (add-to-list 'package-archives
-		 '("marmalade" . "http://marmalade-repo.org/packages/"))
+		 '("org" . "https://orgmode.org/elpa/"))
     (add-to-list 'package-archives
-		 '("ELPA" . "http://tromey.com/elpa/"))
+		 '("gnu" . "https://elpa.gnu.org/packages/"))
     ;; インストールしたパッケージにロードパスを通して読み込む
     (package-initialize)))
 
@@ -67,8 +66,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (yaml-mode wgrep undo-tree smartparens slamhound rainbow-delimiters python-mode package-store lua-mode js2-mode htmlize groovy-mode exec-path-from-shell erlang elixir-mode company color-theme-monokai color-theme-modern clojure-test-mode clojure-mode-extra-font-locking angular-snippets angular-mode ac-python ac-php ac-nrepl ac-inf-ruby ac-html-csswatcher ac-html-bootstrap ac-html-angular ac-html ac-haskell-process ac-etags ac-emoji ac-clang ac-cider ac-capf ac-c-headers 4clojure))))
+   '(tide kotlin-mode rust-mode typescript-mode window-end-visible yaml-mode smartparens rainbow-delimiters python-mode package-store lua-mode js2-mode groovy-mode exec-path-from-shell erlang elixir-mode company color-theme-monokai color-theme-modern clojure-test-mode clojure-mode-extra-font-locking angular-snippets angular-mode ac-python ac-php ac-nrepl ac-inf-ruby ac-html-csswatcher ac-html-bootstrap ac-html-angular ac-html ac-haskell-process ac-etags ac-emoji ac-clang ac-cider ac-capf ac-c-headers 4clojure)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

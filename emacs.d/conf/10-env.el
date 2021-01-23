@@ -7,9 +7,10 @@
 (cd "~/")
 
 ;; タブサイズ
-(setq tab-width 4)
-(setq cssm-indent-level 4)
-(setq cssm-indent-function #'cssm-c-style-indenter)
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil) 
+(setq-default cssm-indent-level 4)
+(setq-default cssm-indent-function #'cssm-c-style-indenter)
 
 ;; テキストエンコーディングとしてUTF-8を優先的に使用する
 ;; 「utf-8」の部分を「cp932」とするとCP932（Windows用Shift JIS）優先となる
